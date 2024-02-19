@@ -28,9 +28,10 @@ repeatPasswordField.addEventListener("input", checkPasswordRepeat);
 function updateUsername(){
   username = getUsername();
   console.log("updating username:", username);
-  if (username){
+    if (username){
+    document.querySelectorAll('.username').forEach(element=>{
       element.textContent = username;
-    }
+    });}
   }
 
 function router() {
